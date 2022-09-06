@@ -1,0 +1,800 @@
+/* =============== common css start =============== */
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul,ol{
+    list-style: none;
+}
+img{
+    vertical-align: middle;
+}
+.container{
+    max-width: 975px;
+    margin: 0 auto;
+}
+.clr{
+    clear: both;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+/* =============== common css End =============== */
+
+
+
+/* =============== navigation css start =============== */
+
+#menu{
+    background: rgba(16, 22, 54, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.main_menu{
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu_left{
+    width: 30%;
+}
+.menu_right{
+    width: 70%;
+}
+.menu_left a{
+    font-weight: 900;
+    font-size: 21px;
+    line-height: 52px;
+    color: #fff;
+}
+.menu_right ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+}
+.menu_right ul li{
+    padding-left: 30px;
+}
+.menu_right ul li a{
+    font-weight: 100;
+    font-size: 12px;
+    line-height: 52px;
+    color: #fff;
+    border-top: 1px solid transparent;
+    transition: all linear .3s;
+}
+.menu_right ul li a:hover{
+    border-top: 1px solid #4c76ff;
+}
+.fix_nav{
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 999 !important;
+    background-color: #000 !important;
+}
+/* =============== navigation css End =============== */
+
+
+
+/* =============== banner css start =============== */
+
+#banner{
+    padding: 280px 0px;
+}
+.banner_text{
+    text-align: center;
+}
+.banner_text h1{
+    font-weight: 900;
+    font-size: 62px;
+    color: #fff;
+}
+.banner_text h1 span , .banner_text h2 span{
+    color: #4c76ff;
+}
+.banner_text h2{
+    font-weight: 100;
+    font-size: 48px;
+    color: #fff;
+}
+.banner_text p{
+    font-weight: 100;
+    font-size: 18px;
+    color: #fff;
+    position: relative;
+    padding-top: 20px;
+}
+.banner_text p::after {
+	position: absolute;
+	content: '';
+	top: 32px;
+	left: 330px;
+	width: 30px;
+	height: 1px;
+	background: #4c76ff;
+}
+.banner_text p::before {
+	position: absolute;
+	content: '';
+	top: 32px;
+	right: 330px;
+	width: 30px;
+	height: 1px;
+	background: #4c76ff;
+}
+.banner_text ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 80px;
+}
+.banner_text ul li a{
+    color: rgba(128, 128, 128, 0.3);
+    font-size: 16px;
+    margin: 0 7px;
+    transition: all linear .3s;
+}
+.banner_text ul li a:hover{
+    color: #ffffff;
+}
+
+/* =============== banner css End =============== */
+
+
+
+/* =============== feature css start =============== */
+
+#feature{
+    background: #efefef;
+    padding: 80px 0px;
+}
+.common_head{
+    text-align: center;
+}
+.common_head h2{
+    color: #4c76ff;
+    font-size: 28px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding-bottom: 15px;
+}
+.common_head p{
+    color: #062033;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 18px;
+    padding-top: 35px;
+}
+.common_head p span{
+    display: block;
+}
+.feature_part{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ftur_part{
+    width: 310px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 70px;
+}
+.ftr_icon{
+    width: 35px;
+    height: 35px;
+    border: 1px solid #4c76ff;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 5px;
+}
+.ftr_icon i{
+    font-size: 16px;
+    color: #4c76ff;
+    padding-top: 8px;
+}
+.ftr_text{
+    width: 270px;
+    text-align: left;
+}
+.ftr_text h4{
+    color: #000000;
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+.ftr_text p{
+    color: #062033;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    line-height: 18px;
+}
+/* =============== feature css End =============== */
+
+
+
+/* =============== mobile css start =============== */
+
+#mobile{
+    padding: 90px 0px;
+}
+.mobile_head{
+    text-align: center;
+}
+.mobile_head h6{
+    color: #282528;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+}
+.mobile_part{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 65px;
+}
+.mobile_set{
+    width: 310px;
+}
+.mobile_img{
+    width: 325px;
+}
+.mobile_img img{
+    width: 100%;
+    max-width: 100%;
+}
+.mobile_about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 15px 10px 15px 18px;
+    transition: all linear .3s;
+}
+.about_icon{
+    width: 35px;
+}
+.about_text{
+    width: 240px;
+}
+.about_icon i{
+    color: #bfbebf;
+    font-size: 28px;
+    margin-top: 3px;
+    transition: all linear .3s;
+}
+.about_text h4{
+    color: #282528;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.about_text p{
+    color: #282528;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+}
+.mobile_about:first-child{
+    margin-top: 45px;
+}
+.mobile_about:nth-child(2){
+    margin: 45px 0px;
+}
+.mobile_about:hover{
+    background: rgba(247, 226, 39, 0.10);
+}
+.mobile_about:hover i{
+    color: #5a5855;
+}
+
+/* =============== mobile css End =============== */
+
+
+
+/* =============== work css start =============== */
+
+#work{
+    padding-bottom: 108px;
+}
+.work_part{
+    padding: 50px 0px;
+    text-align: center;
+}
+.work_part p{
+    color: #062033;
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 18px;
+}
+.work_part p span{
+    display: block;
+}
+.work_part ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 65px;
+}
+.work_part ul li a{
+    color: #062033;
+    font-size: 14px;
+    font-weight: 900;
+    line-height: 30px;
+    padding: 0px 10px;
+    margin: 0px 5px;
+    border-radius: 5px;
+    transition: all linear .3s;
+} 
+.work_part ul li a:hover{
+    background: #4c76ff;
+    color: #fff;
+}
+.work_img ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.work_img ul li{
+    width: 25%;
+    position: relative;
+}
+.work_img ul li img{
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+.ovrly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(76, 118, 255, 0.9);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 70px 63px;
+    transform: scale(0);
+    transition: all linear .3s;
+}
+.ovrly a{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+.ovrly a i{
+    color: #fff;
+    padding-top: 6px;
+}
+.ovrly h3{
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding-top: 18px;
+}
+.ovrly h3 span{
+    display: block;
+    color: #fff;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.work_img ul li:hover .ovrly{
+    transform: scale(1);
+}
+
+/* =============== work css End =============== */
+
+
+
+/* =============== team css start =============== */
+
+#team{
+    padding-bottom: 100px;
+}
+.team_part{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.team_mem{
+    width: 225px;
+    text-align: center;
+    padding-top: 95px;
+}
+.team_img{
+    width: 225px;
+    position: relative;
+}
+.team_img img{
+    width: 100%;
+    max-width: 100%;
+}
+.team_mem h3{
+    color: #062033;
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding-top: 10px;
+    transition: all linear .3s;
+}
+.team_mem h6{
+    color: #062033;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding-top: 5px;
+}
+.ovrly_team{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(76, 118, 255, 0.9);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding: 20px;
+    transform: scale(0);
+    transition: all linear .3s;
+}
+.ovrly_team p{
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.ovrly_team p span{
+    color: #fff;
+    font-size: 13px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    display: block;
+    padding-bottom: 5px;
+}
+.ovrly_team ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 55px;
+}
+.ovrly_team ul li{
+    margin-right: 5px;
+}
+.ovrly_team ul li:last-child{
+    margin-right: 0;
+}
+.ovrly_team ul li a{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+.ovrly_team ul li a i{
+    font-size: 20px;
+    color: #fff;
+    padding: 7px;
+    transition: all linear .3s;
+}
+.team_mem:hover .ovrly_team{
+    transform: scale(1);
+}
+.ovrly_team ul li a:hover i{
+    color: #1db99a;
+}
+.team_mem:hover h3{
+    color: #1db99a;
+}
+
+
+/* =============== team css End =============== */
+
+
+
+/* =============== fun fact css start =============== */
+
+#fun_fact{
+    padding: 75px 0 118px;
+    position: relative;
+    z-index: 1;
+}
+#fun_fact::after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(6, 32, 51, 0.8);
+    z-index: -1;
+}
+.fun_head h2{
+    font-size: 22px;
+}
+.fun_part{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+.facts{
+    width: 145px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.facts_icon{
+    width: 97px;
+    height: 97px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    text-align: center;
+}
+.facts_icon i{
+    font-size: 40px;
+    color: #ffffff;
+    padding: 25px;
+}
+.facts h2{
+    color: #fff;
+    font-size: 44px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+}
+.facts h6{
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* =============== fun fact css End =============== */
+
+
+
+/* =============== Discuss css start =============== */
+
+#discuss{
+    padding-top: 78px;
+}
+.discuss_head p{
+    font-size: 18px;
+    font-weight: 100;
+    color: #062033;
+}
+.discuss_part{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 78px;
+}
+.discuss_text{
+    width: 230px;
+}
+.discuss_form{
+    width: 665px;
+}
+.discuss_social{
+    width: 45px;
+}
+.discuss_form form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form_name , .form_email{
+    width: 320px;
+}
+.form_msg{
+    width: 665px;
+}
+.form_submit{
+    width: 665px;
+    text-align: right;
+}
+.discuss_text p{
+    color: #6a737b;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    padding-top: 30px;
+}
+.discuss_text h3{
+    color: #062033;
+    font-size: 19px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.discuss_text p span{
+    display: block;
+    padding-top: 3px;
+}
+.discuss_form h3{
+    color: #062033;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    padding-bottom: 32px;
+}
+.form_name input{
+    background: transparent;
+    border: transparent;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #5b646e;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    width: 308px;
+    
+}
+.form_email input{
+    background: transparent;
+    border: transparent;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #5b646e;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    width: 305px;
+    
+}
+.form_msg input{
+    background: transparent;
+    border: transparent;
+    font-size: 11px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #5b646e;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    width: 646px;
+    margin-top: 30px;
+}
+.form_submit button{
+    border: none;
+    background: none;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #000;
+    cursor: pointer;
+}
+.form_submit button i{
+    font-size: 14px;
+    color: #4c76ff;
+    padding-right: 5px;
+    margin-top: 25px;
+}
+.discuss_social ul {
+	text-align: center;
+	padding-top: 20px;
+}
+.discuss_social li{
+    margin-bottom: 15px;
+}
+.discuss_social li:last-child{
+    margin-bottom: 0px;
+}   
+.discuss_social li a i{
+    font-size: 18px;
+    color: #cdd2d6;
+    transition: all linear .3s;
+} 
+.discuss_social li a:hover i{
+    font-size: 18px;
+    color: #4c76ff;
+} 
+.discuss_map{
+    height: 185px;
+    margin-top: 90px;
+}
+/* =============== Discuss css End =============== */
+
+
+
+/* =============== footer css start =============== */
+
+#footer{
+    padding: 50px 0;
+    background: #000;
+}
+.footer_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer_part{
+    width: 250px;
+}
+.footer_text h2{
+    font-weight: 900;
+    font-size: 27px;
+    color: #fff;
+}
+.footer_text h2 span{
+    color: #4c76ff;
+}
+.footer_text p{
+    font-weight: 100;
+    font-size: 13px;
+    color: #fff;
+    line-height: 23px;
+    padding-top: 20px;
+}
+.footer_part h2{
+    font-weight: 900;
+    font-size: 18px;
+    color: #fff;
+}
+.footer_part p{
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+.footer_input{
+    padding-top: 35px;
+    padding-bottom: 18px;
+}
+.footer_input input{
+    background: transparent;
+    border: 2px solid #fff;
+    border-right: transparent;
+    width: 208px;
+    height: 37px;
+    color: #fff;
+    transition: all linear .3s;
+}
+.footer_input button{
+    width: 25px;
+    height: 37px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-left: transparent;
+    text-align: left;
+    cursor: pointer;
+}
+.footer_input button i{
+    font-size: 14px;
+    color: #fff;
+}
+.footer_explore{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.footer_explore ul{
+    width: 104px;
+}
+.footer_explore ul li{
+    margin-bottom: 10px;
+}
+.footer_explore ul li:last-child{
+    margin-bottom: 0px;
+}
+.footer_explore ul li a{
+    font-size: 12px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    transition: all linear .3s;
+}
+.footer_explore ul li a:hover{
+    color: #4c76ff;
+}
+/* =============== footer css End =============== */
